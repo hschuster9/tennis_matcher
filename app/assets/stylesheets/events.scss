@@ -1,3 +1,45 @@
 // Place all the styles related to the Events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+
+.comment {
+  width: 40%;
+  background-color: rgba(208, 202, 190, .3);
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.events, .postcontent {
+  background-color: rgba(208, 202, 190, .5);
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 50%;
+  height: 250px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+.titles {
+  color: white;
+}
+
+.button_style {
+  background-color: #4483ea;
+  color: white;
+  border-radius: 8px;
+  height: 32px;
+  width: 60px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.firstline h5 {
+  display: inline;
+  font-size: 13px;
+}

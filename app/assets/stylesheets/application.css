@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+
+ a {
+   text-decoration: none;
+
+ }
+
+ h1 {
+   text-align: center;
+   font-size: 35px;
+   color: white;
+ }
+
+ body {
+   font-family: 'Raleway', sans-serif;
+   background-color: #50c97c;
+   color: #1a2f5b;
+ }
+
+ body a {
+   color: white;
+ }
+
+ body a:hover {
+
+   background-color: #1a2f5b;
+   border-radius: 8px;
+   padding: 8px;
+ }
