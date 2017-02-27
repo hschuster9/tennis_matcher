@@ -1,0 +1,33 @@
+<h4><%= link_to "< Back to All Events", events_path %></h4>
+
+<div class="titles">
+<h2> Create New Event</h2>
+</div>
+<%= form_for  @event do |f| %>
+
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+<br>
+<br>
+  <%= f.label :posted_by, "By" %>
+  <%= f.text_field :posted_by %>
+
+<br>
+<br>
+  <%= f.label :location, "Where" %>
+  <%= f.text_field :location %>
+<br>
+<br>
+  <%= f.label :level %>
+  <%= f.text_field :level %>
+<br>
+<br>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+<br>
+<br>
+<br>
+<%= f.submit "Create", :class =>"button_style"%>
+
+  <% end %>

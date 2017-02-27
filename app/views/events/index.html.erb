@@ -1,0 +1,21 @@
+<div class="titles">
+<h2> All Events </h2>
+</div>
+
+  <%= link_to "Create New Event", new_event_path %>
+
+<ul>
+<% @events.each do |event| %>
+
+<div class="events">
+<h4><%= link_to event.title, event_path(event) %> </h4>
+<div class="firstline">
+Posted by: <%= event.posted_by %>
+| <h5><%= event.created_at.strftime("%m-%d-%Y") %> at <%= event.created_at.strftime("%I:%M %p") %></h5></div><br>
+Where: <%= event.location %><br>
+Level: <%= event.level %> <br>
+</div>
+<br>
+<% end %>
+
+</ul>
