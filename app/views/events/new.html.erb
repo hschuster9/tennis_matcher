@@ -20,7 +20,7 @@
 <br>
 <br>
   <%= f.label :level %>
-  <%= f.select :level, [[1], [1.5], [2.0], [2.5]]%>
+  <%= f.number_field(:level, in: 1.0..7.0, step: 0.5) %>
 <br>
 <br>
     <%= f.label :description %>

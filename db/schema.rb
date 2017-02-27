@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20170227163217) do
     t.string   "posted_by"
     t.datetime "created_at"
     t.string   "location"
-    t.integer  "level"
+    t.decimal  "level"
     t.text     "description"
   end
 
