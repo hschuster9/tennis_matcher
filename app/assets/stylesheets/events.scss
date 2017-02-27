@@ -3,30 +3,33 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
+.newevent{
+  margin: 10px;
+}
 
 
 .comment {
   width: 40%;
   background-color: rgba(208, 202, 190, .3);
   border: 1px solid gray;
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 45px;
+  padding: 20px;
 }
 
 .events, .postcontent {
   background-color: rgba(208, 202, 190, .5);
   border: 1px solid gray;
-  border-radius: 15px;
+  border-radius: 45px;
   width: 50%;
   height: 250px;
   text-align: left;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 30px;
 }
 
-.titles {
+.titles{
   color: white;
+  margin: 10px;
 }
 
 .button_style {
