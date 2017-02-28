@@ -14,9 +14,9 @@
 </div>
 
 <div class="postcontent">
- <div class="firstline"> Posted by: <%= @event.posted_by %> | <h5><%= @event.created_at.strftime("%m-%d-%Y") %> at <%= @event.created_at.strftime("%I:%M %p") %></h5></div><br>
-Where: <%= @event.location %><br>
-Level: <%= @event.level %> <br><br>
+ <div class="firstline"> <b>Posted by: </b><%= @event.posted_by %> | <h5><%= @event.created_at.strftime("%m-%d-%Y") %> at <%= @event.created_at.strftime("%I:%M %p") %></h5></div><br>
+<b>Where:</b> <%= @event.location %><br><br>
+<b>Level:</b> <%= @event.level %> <br><br>
   <p><%= @event.description %></p>
 <br>
 </div>

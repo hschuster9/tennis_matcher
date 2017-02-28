@@ -41,7 +41,7 @@ class EventsController < ApplicationController
     else
       flash[:alert] = "Only the author of this post can delete it"
     end
-    redirect_to posts_path
+    redirect_to events_path
 
   end
 

@@ -12,11 +12,11 @@
 <div class="events">
 <h3><%= link_to event.title, event_path(event) %> </h3>
 <div class="firstline">
-  Posted by: <%= event.posted_by %>
+  <b>Posted by: </b><%= event.posted_by %>
     | <h5><%= event.created_at.strftime("%m-%d-%Y") %> at <%= event.created_at.strftime("%I:%M %p") %></h5></div><br>
 
-      Where: <%= event.location %><br><br>
-      Level: <%= event.level %> <br>
+    <b>  Where: </b><%= event.location %><br><br>
+    <b> Level: </b> <%= event.level %> <br>
 
 
 </div>

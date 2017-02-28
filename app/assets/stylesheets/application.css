@@ -44,7 +44,9 @@
  }
 
 
-
+.field {
+  font-weight: bold;
+}
 
   /*body a {
     color: white;
