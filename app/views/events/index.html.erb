@@ -6,6 +6,10 @@
   <%= link_to "Create New Event", new_event_path %>
 </div>
 
+<% if @events.blank? %>
+  <h4>There are no events containing the term <%= params[:search] %>.</h4>
+<% end %>
+
 <ul>
 <% @events.each do |event| %>
 

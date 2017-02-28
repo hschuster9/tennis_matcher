@@ -32,6 +32,12 @@
     </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <%= form_tag(events_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Events" %>
+      <%= submit_tag "Search", :location => nil %>
+    <% end %>
+
     <%= yield %>
 
   </body>
