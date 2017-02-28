@@ -28,9 +28,11 @@ Level: <%= @event.level %> <br><br>
 <div class="comment">
   <% @event.comments.each do |comment| %>
  <h6> Posted by <%= comment.comment_by %> <%= comment.created_at.strftime("%m-%d-%Y %I:%M %p") %></h6>
+<p><%= comment.content %></p>
  <div class="eventlinks">
-   <% if current_user == @comment.user %>
-  <p><%= comment.content %> <%= link_to "Edit", edit_event_comment_path(@event, comment) %></p>
+
+ <% if (comment.user == current_user) && current_user %>
+   <%= link_to "Edit", edit_event_comment_path(@event, comment) %>
   <% end %>
 </div>
 <% end %>
