@@ -9,8 +9,10 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.create!(event_params)
-    redirect_to events_path
+    # @event = Event.create!(event_params)
+    # redirect_to events_path
+    @event = current_user.posts.create!(post_params)
+    redirect_to event_path(@event)
   end
 
   def show
