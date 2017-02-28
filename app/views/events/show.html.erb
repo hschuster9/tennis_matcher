@@ -1,8 +1,14 @@
-<h4><%= link_to "< Back to All Events", events_path %></h4>
+<div class="eventlinks">
+  <h4><%= link_to "< Back to All Events", events_path %></h4>
+</div>
 <br>
 
 <div class="titles">
-  <h2><%= @event.title %></h2> <h4><%= link_to"Edit Event", edit_event_path %></h4>
+  <h2><%= @event.title %></h2>
+</div>
+
+<div class="eventlinks">
+  <h4><%= link_to"Edit Event", edit_event_path %></h4>
 </div>
 
 <div class="postcontent">
@@ -13,12 +19,16 @@ Level: <%= @event.level %> <br><br>
 <br>
 </div>
 <div class="wholecommentsection">
-<h4> <%= link_to "Post a comment", new_event_comment_path(@event) %> <h4>
+<div class="eventlinks">
+    <h4> <%= link_to "Post a comment", new_event_comment_path(@event) %> <h4>
+  </div>
 
 <div class="comment">
   <% @event.comments.each do |comment| %>
  <h6> Posted by <%= comment.comment_by %> <%= comment.created_at.strftime("%m-%d-%Y %I:%M %p") %></h6>
+ <div class="eventlinks">
   <p><%= comment.content %> <%= link_to "Edit", edit_event_comment_path(@event, comment) %></p>
+</div>
 <% end %>
 </div>
 </div>
