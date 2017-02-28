@@ -1,8 +1,10 @@
+
 <h4><%= link_to "< Back to All Events", events_path %></h4>
 
 <div class="titles">
 <h2> Create New Event</h2>
 </div>
+
 <%= form_for  @event do |f| %>
 
 
@@ -28,6 +30,9 @@
 <br>
 <br>
 <br>
+
+<div class="button">
 <%= f.submit "Create", :class =>"button_style"%>
+</div>
 
   <% end %>

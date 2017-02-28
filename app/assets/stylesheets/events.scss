@@ -7,31 +7,45 @@
 .newevent{
   margin: 10px;
 }
+.button {
+  margin-left: 30%;
+}
 
+.form {
+  background-color: rgba(208, 202, 190, .5);
+  border: 1px solid gray;
+  border-radius: 45px;
+  width: 30%;
+  height: 220px;
+  text-align: left;
+  padding: 20px;
+  margin: 30px;
+
+  }
 
 .comment {
   width: 40%;
-  background-color: rgba(208, 202, 190, .3);
-  border: 1px solid gray;
+  background-color: rgba(208, 202, 190, .7);
+  border: 0.5px solid #eeee9c;
   border-radius: 45px;
-  padding: 20px;
+  margin: 0 auto;
 }
 
 .events, .postcontent {
   background-color: rgba(208, 202, 190, .5);
-  // background-color: rgba(219, 195, 163, .5);
-  border: 1px solid gray;
+  border: 0.5px solid #eeee9c;
   border-radius: 45px;
-  width: 50%;
-  height: 250px;
-  text-align: left;
-  padding: 20px;
-  margin: 30px;
+  width: 45%;
+  height: 200px;
+  padding-top: 20px;
+  margin: 0 auto;
+
 }
 
 .titles{
   color: white;
   margin: 10px;
+  text-align: center;
 }
 
 .button_style {
