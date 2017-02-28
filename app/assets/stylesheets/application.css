@@ -14,6 +14,21 @@
  *= require_self
  */
 
+.notice, .alert {
+  font-weight: bold;
+}
+.signup_button, .login_button {
+  margin: 0 auto;
+  background-color: #4483ea;
+  color: white;
+  border-radius: 8px;
+  height: 32px;
+  width: 60px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
  nav {
    background-color: #1a2f5b;
    height: 90px;
