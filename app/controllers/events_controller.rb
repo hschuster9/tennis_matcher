@@ -11,7 +11,7 @@ class EventsController < ApplicationController
   def create
     # @event = Event.create!(event_params)
     # redirect_to events_path
-    @event = current_user.posts.create!(post_params)
+    @event = current_user.events.create!(event_params)
     redirect_to event_path(@event)
   end
 
@@ -32,9 +32,17 @@ class EventsController < ApplicationController
   end
 
   def destroy
+    # @event = Event.find(params[:id])
+    # @event.destroy
+    # redirect_to events_path
     @event = Event.find(params[:id])
-    @event.destroy
-    redirect_to events_path
+    if @event.user == current_user
+      @event.destroy
+    else
+      flash[:alert] = "Only the author of this post can delete it"
+    end
+    redirect_to posts_path
+
   end
 
   private
