@@ -1,4 +1,4 @@
-Ruby 2.4 on Rails 5.0.1, PostgreSQL, and ActiveRecord were used to create this app.
+Ruby 2.4 on Rails 5.0.1, PostgreSQL, and ActiveRecord were used to create this app; deployed on Heroku.
 
 This app was created to allow users to connect/communicate with other users by posting events and commenting on them.
 
