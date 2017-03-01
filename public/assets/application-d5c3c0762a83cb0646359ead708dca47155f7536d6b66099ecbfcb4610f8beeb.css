@@ -1,0 +1,168 @@
+/* line 5, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.newevent {
+  margin: 10px;
+}
+
+/* line 9, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.form {
+  font-weight: bold;
+  background-color: rgba(208, 202, 190, 0.5);
+  border: 1px solid gray;
+  border-radius: 45px;
+  width: 30%;
+  height: 220px;
+  text-align: left;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.comment {
+  width: 35%;
+  background-color: rgba(208, 202, 190, 0.7);
+  border: 0.5px solid #eeee9c;
+  border-radius: 45px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+/* line 30, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.events, .postcontent {
+  background-color: rgba(208, 202, 190, 0.7);
+  border: 0.5px solid #eeee9c;
+  border-radius: 45px;
+  width: 45%;
+  height: 200px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+/* line 40, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.titles {
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+
+/* line 46, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.button_style {
+  background-color: #4483ea;
+  color: white;
+  border-radius: 8px;
+  height: 32px;
+  width: 60px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 40%;
+}
+
+/* line 57, /Users/HannahSchuster/wdi/projects/tennis_matcher/app/assets/stylesheets/events.scss */
+.firstline h5 {
+  display: inline;
+  font-size: 13px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+.notice, .alert {
+  font-weight: bold;
+}
+
+.signup_button, .login_button {
+  margin: 0 auto;
+  background-color: #4483ea;
+  color: white;
+  border-radius: 8px;
+  height: 32px;
+  width: 60px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav {
+   background-color: #1a2f5b;
+   height: 90px;
+   padding-top: 1px;
+   top: 0;
+   color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #50c97c;
+  color: #1a2f5b;
+  margin: 0 auto;
+  text-align: center;
+  background: url('tennisball.jpg') no-repeat center center fixed;
+  background-size: cover;
+ }
+
+.field {
+  font-weight: bold;
+}
+
+.events a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #1a2f5b;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.events a:hover {
+  color: #1a2f5b;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px;
+}
+
+
+.eventlinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.eventlinks a:hover{
+  color: #1a2f5b;
+  background-color: white;
+  border-radius: 30px;
+  padding: 6px;
+}
+
+.postcommentlink a {
+  color: #1a2f5b;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.postcommentlink a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #1a2f5b;
+  border-radius: 15px;
+  padding: 8px;
+}
