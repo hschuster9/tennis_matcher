@@ -17,6 +17,7 @@
 .notice, .alert {
   font-weight: bold;
 }
+
 .signup_button, .login_button {
   margin: 0 auto;
   background-color: #4483ea;
@@ -26,69 +27,43 @@
   width: 60px;
   font-size: 13px;
   font-family: 'Raleway', sans-serif;
-
 }
 
- nav {
+nav {
    background-color: #1a2f5b;
    height: 90px;
    padding-top: 1px;
    top: 0;
    color: white;
+}
 
- }
-
-
-  h1 {
+h1 {
     text-align: center;
     font-size: 35px;
     color: white;
-  }
+}
 
-  body {
-
-    font-family: 'Raleway', sans-serif;
-    background-color: #50c97c;
-
-    color: #1a2f5b;
-    margin: 0 auto;
-    text-align: center;
-    background: url('tennisball.jpg') no-repeat center center fixed;
-    background-size: cover;
-   /*background-repeat: no-repeat;*/
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #50c97c;
+  color: #1a2f5b;
+  margin: 0 auto;
+  text-align: center;
+  background: url('tennisball.jpg') no-repeat center center fixed;
+  background-size: cover;
  }
-
 
 .field {
   font-weight: bold;
 }
 
-  /*body a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #1a2f5b;
-    border-radius: 15px;
-    padding: 8px;
-
-  }
-
-  body a:hover {
-    color: #1a2f5b;
-    background-color: white;
-    border-radius: 30px;
-    padding: 8px;
-  }*/
-
 .events a {
-
   color: white;
   font-weight: bold;
   text-decoration: none;
   background-color: #1a2f5b;
   border-radius: 15px;
   padding: 8px;
-
 }
 
 .events a:hover {
@@ -108,6 +83,22 @@
   color: #1a2f5b;
   background-color: white;
   border-radius: 30px;
-  padding: 4px;
+  padding: 6px;
+}
 
+.postcommentlink a {
+  color: #1a2f5b;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.postcommentlink a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #1a2f5b;
+  border-radius: 15px;
+  padding: 8px;
 }
