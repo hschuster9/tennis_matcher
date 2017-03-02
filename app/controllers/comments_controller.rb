@@ -9,7 +9,6 @@ class CommentsController < ApplicationController
     @event = Event.find(params[:event_id])
     @comment = @event.comments.create(comment_params)
 
-    # @comment = current_user.comments.create!(comment_params)
     redirect_to event_path(@event)
   end
 
@@ -31,7 +30,6 @@ class CommentsController < ApplicationController
     @comment.destroy
 
     redirect_to event_path(@event)
-
   end
 
 
