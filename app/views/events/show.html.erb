@@ -15,26 +15,25 @@
 
 <div class="postcontent">
  <div class="firstline"> <b>Posted by: </b><%= @event.posted_by %> | <h5><%= @event.created_at.strftime("%m-%d-%Y") %> at <%= @event.created_at.strftime("%I:%M %p") %></h5></div><br>
-<b>Where:</b> <%= @event.location %><br><br>
-<b>Level:</b> <%= @event.level %> <br><br>
-  <p><%= @event.description %></p>
-<br>
+  <b>Where:</b> <%= @event.location %><br><br>
+  <b>Level:</b> <%= @event.level %> <br><br>
+    <p><%= @event.description %></p>
+  <br>
 </div>
 <div class="wholecommentsection">
 <div class="postcommentlink">
-    <h4> <%= link_to "Post a comment", new_event_comment_path(@event) %> <h4>
-  </div>
+  <h4> <%= link_to "Post a comment", new_event_comment_path(@event) %> <h4>
+</div>
 
 <div class="comment">
   <% @event.comments.each do |comment| %>
- <h6> Posted by <%= comment.comment_by %> <%= comment.created_at.strftime("%m-%d-%Y %I:%M %p") %></h6>
-<p><%= comment.content %></p>
- <div class="eventlinks">
-
- <% if (comment.user == current_user) && current_user %>
-   <%= link_to "Edit", edit_event_comment_path(@event, comment) %>
+  <h6> Posted by <%= comment.comment_by %> <%= comment.created_at.strftime("%m-%d-%Y %I:%M %p") %></h6>
+  <p><%= comment.content %></p>
+  <div class="eventlinks">
+     <% if (comment.user == current_user) && current_user %>
+      <%= link_to "Edit", edit_event_comment_path(@event, comment) %>
+    <% end %>
+  </div>
   <% end %>
-</div>
-<% end %>
 </div>
 </div>

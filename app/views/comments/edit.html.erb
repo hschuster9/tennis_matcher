@@ -4,21 +4,16 @@
 
 <div class="form">
 <%= form_for  [@event, @comment] do |f| %>
-
-
   <%= f.label :comment_by, "By:"  %>
   <%= f.text_field :comment_by %>
 <br>
 <br>
-
-    <%= f.label :content, "Comment:" %>
-    <%= f.text_area :content %>
+  <%= f.label :content, "Comment:" %>
+  <%= f.text_area :content %>
 <br>
 <br>
 <br>
-
 <%= f.submit "Update", :class =>"button_style"  %>
-
   <% end %>
 <br>
   <%= form_for [@event, @comment], method: :delete do |f| %>

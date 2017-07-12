@@ -14,7 +14,6 @@
 <br>
   <%= f.label :posted_by, "By:" %>
   <%= f.text_field :posted_by %>
-
 <br>
 <br>
   <%= f.label :location, "Where:" %>
@@ -27,19 +26,16 @@
 <br>
     <%= f.label :description, "Description:" %>
     <%= f.text_area :description %>
-
 <br>
 <br>
 <br>
 <br>
 
 <%= f.submit "Update", :class =>"button_style"%>
-
   <% end %>
 
 <br>
 <br>
   <%= form_for @event, url: event_path, method: :delete do |f| %>
-
   <% f.submit "Delete", :class =>"button_style"%>
   <% end %>

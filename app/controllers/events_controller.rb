@@ -7,7 +7,6 @@ class EventsController < ApplicationController
     else
       @events = Event.all.order("created_at DESC")
     end
-
   end
 
   def new
@@ -40,13 +39,12 @@ class EventsController < ApplicationController
     else
       flash[:alert] = "Only the author of this post can delete it"
     end
-    redirect_to events_path  
+    redirect_to events_path
   end
 
   private
   def event_params
     params.require(:event).permit(:title, :posted_by, :location, :level, :description)
   end
-
 
 end

@@ -4,7 +4,7 @@
 * This app was created to allow users to connect/communicate with other users by posting events and commenting on them.
 
 ## Technologies Used
-* Ruby 2.4 on Rails 5.0.1, PostgreSQL, and ActiveRecord were used to create this app; deployed on Heroku.
+* Ruby 2.4 on Rails 5.0.1, PostgreSQL, and Active Record were used to create this app; deployed on Heroku.
 
 
 ## User Stories

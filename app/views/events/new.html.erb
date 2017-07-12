@@ -3,20 +3,17 @@
 </div>
 
 <div class="titles">
-<h2> Create New Event</h2>
+  <h2> Create New Event</h2>
 </div>
 
 <div class="form">
 <%= form_for  @event do |f| %>
-
-
   <%= f.label :title, "Title:" %>
   <%= f.text_field :title %>
 <br>
 <br>
   <%= f.label :posted_by, "By:" %>
   <%= f.text_field :posted_by %>
-
 <br>
 <br>
   <%= f.label :location, "Where:" %>
@@ -27,14 +24,12 @@
   <%= f.select :level, options_for_select((1..7).step(0.5)) %>
 <br>
 <br>
-    <%= f.label :description, "Description:" %>
-    <%= f.text_area :description %>
+  <%= f.label :description, "Description:" %>
+  <%= f.text_area :description %>
 <br>
 <br>
 <br>
 <br>
 
 <%= f.submit "Create", :class =>"button_style"%>
-
-
   <% end %>
